@@ -1,8 +1,45 @@
+.head-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header{
+    font-family: 'Homemade Apple', cursive;
+    font-size: 60px;
+    padding:0;
+    margin:0;
+}
+.button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.add-post-button{
+    width:95%;
+    height:50px;
+    font-family: 'Dosis', sans-serif;
+    background-color: #fff;
+    border: none;
 
+}
+.popup-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    position: absolute;
+    height:100vh;
+    width:100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
 .form-container{
-    background-color: #dddddd;
+    background-color: #b1ddea;
     padding:15px;
     border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    width:33%;
+    position: absolute;
 }
 .post-container{
     padding-top:5px;

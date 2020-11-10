@@ -1,6 +1,15 @@
 .post{
-    background-color: #dddddd;
+    background-color: #fff;
     padding:15px;
     border-radius: 15px;;
     margin:10px;
+    /* position: relative; */
+    font-family: 'Dosis', sans-serif;
+}
+.x{
+    /* position: absolute; */
+    right:10px;
+    top:50%;
+    border:none;
+    background-color:#fff;
 }

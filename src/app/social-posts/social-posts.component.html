@@ -1,11 +1,19 @@
-<div class="form-container">
-  <app-post-form (submitted)="onSubmit($event)"></app-post-form>
+<div class="popup-box" *ngIf="popup !== null">
+  <div class="form-container">
+    <app-post-form (submitted)="onSubmit($event)"></app-post-form>
+  </div>
+</div>
+<div class="head-container">
+  <h1 class="header">Social Posts</h1>
+</div>
+<div class="button-container">
+  <button class="add-post-button" (click)="popupValue()">New Thought</button>
 </div>
 <div class="post-container">
-    <app-post
-      class="post"
-      *ngFor="let post of posts; index as i"
-      [postRef]="post"
-      (deleted)="onDelete(i)"
-    ></app-post>
+  <app-post
+    class="post"
+    *ngFor="let post of posts; index as i"
+    [postRef]="post"
+    (deleted)="onDelete(i)"
+  ></app-post>
 </div>
